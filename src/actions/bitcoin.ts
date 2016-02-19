@@ -35,9 +35,7 @@ module BitcoinActions {
 		return (dispatch) => {
 			superagent.get('http://api.coindesk.com/v1/bpi/supported-currencies.json')
 				.end((err, body) => {
-					console.log(err, body);
 					if (!err && (body && body.text)) {
-						console.log(body);
 						dispatch(ActionsCreators.getAllCurrencies(JSON.parse(body.text)));
 					}
 				});
