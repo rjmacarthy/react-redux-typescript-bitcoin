@@ -20,7 +20,7 @@ Run develpment server with webpack
 npm run dev
 ```
 
-Build applicatioon
+Build application
 
 ```
 npm run build
