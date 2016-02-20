@@ -8,7 +8,7 @@ import { Provider } from 'react-redux';
 import { Router, Route, hashHistory , IndexRedirect  } from 'react-router';
 import storeConfig from './store';
 
-const store = storeConfig;
+const store: Redux.Store = storeConfig;
 
 ReactDOM.render(
 	<Provider store={store}>
