@@ -4,9 +4,9 @@ import { assign } from 'lodash';
 import { handleActions } from 'redux-actions';
 import * as ActionTypes from '../constants/ActionTypes';
 
-let initialState = {};
+let initialState : any = {};
 
-const bitcoin = (state = initialState, action) => {
+const bitcoin : Redux.Reducer = (state = initialState, action) => {
 	switch (action.type) {
 		case ActionTypes.GET_PRICE:
 			return assign({}, state, {

@@ -21,9 +21,9 @@ module BitcoinActions {
 	}
 
 	export const fetchPrice = (currency: string): any => {
-		return (dispatch) => {
+		return (dispatch: Redux.Dispatch) => {
 			superagent.get(`http://api.coindesk.com/v1/bpi/currentprice/${currency}.json`)
-				.end((err, body) => {
+				.end((err : Error, body : any) => {
 					if (!err && (body && body.text)) {
 						dispatch(ActionsCreators.getCurrentPrice(JSON.parse(body.text)));
 					}
@@ -32,9 +32,9 @@ module BitcoinActions {
 	};
 
 	export const fetchCurrencies = (): any => {
-		return (dispatch) => {
+		return (dispatch: Redux.Dispatch) => {
 			superagent.get('http://api.coindesk.com/v1/bpi/supported-currencies.json')
-				.end((err, body) => {
+				.end((err: Error, body: any) => {
 					if (!err && (body && body.text)) {
 						dispatch(ActionsCreators.getAllCurrencies(JSON.parse(body.text)));
 					}
