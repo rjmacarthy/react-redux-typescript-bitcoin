@@ -14,16 +14,17 @@ Built by rjmacarthy: https://www.cryptogrind.com
 
 ## Usage
 
-Run development server with webpack
-
-```
-npm run dev
-```
 
 Build application
 
 ```
 npm run build
+```
+
+Run development server with webpack
+
+```
+npm run dev
 ```
 
 ## Tests
