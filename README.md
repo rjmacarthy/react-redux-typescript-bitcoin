@@ -14,7 +14,7 @@ Built by rjmacarthy: https://www.cryptogrind.com
 
 ## Usage
 
-Run develpment server with webpack
+Run development server with webpack
 
 ```
 npm run dev
