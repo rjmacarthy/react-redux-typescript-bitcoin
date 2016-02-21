@@ -4,7 +4,17 @@ import * as React from 'react';
 import { autobind } from 'core-decorators';
 import Currency from '../models/Currency';
 
-class SelectInput extends React.Component<any, any> {
+interface SelectProps {
+	selected: any;
+	options: Array<Currency>;
+	action: (any) => void;
+};
+
+interface SelectState {
+	selected: string;
+};
+
+class SelectInput extends React.Component<SelectProps, SelectState> {
 	public Action : (any) => void = this.props.action;
 
 	constructor(props : any) {

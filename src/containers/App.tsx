@@ -5,7 +5,11 @@ import * as React from 'react';
 import Footer from './Footer';
 import Header from './Header';
 
-class App extends React.Component<any, any> {
+interface AppProps {
+	children: any;
+};
+
+class App extends React.Component<AppProps, void> {
 	render() : JSX.Element {
 		const { children } : any = this.props;
 		return (

@@ -4,7 +4,11 @@
 import * as React from 'react';
 import Bitcoin from './Bitcoin';
 
-class Index extends React.Component<any, any> {
+interface IndexProps {
+	actions: any;
+};
+
+class Index extends React.Component<IndexProps, void> {
 	public Actions : any = this.props.actions;
 
 	render() : JSX.Element {

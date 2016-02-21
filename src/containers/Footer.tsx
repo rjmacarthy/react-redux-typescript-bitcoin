@@ -3,11 +3,6 @@
 import * as React from 'react';
 
 class Footer extends React.Component<any, any> {
-
-	constructor(props : any) {
-		super(props);
-	}
-
 	render() : JSX.Element {
 		return (
 			<footer>

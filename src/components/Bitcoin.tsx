@@ -8,7 +8,17 @@ import { autobind } from 'core-decorators';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-class Bitcoin extends React.Component<any, any> {
+interface BitcoinProps {
+	bitcoin?: any;
+	actions?: any
+};
+
+interface BitcoinState {
+	selected: string;
+	options?: Array<any>
+};
+
+class Bitcoin extends React.Component<BitcoinProps, BitcoinState> {
 	public Actions : typeof BitcoinActions = this.props.actions;
 
 	constructor(props : any) {

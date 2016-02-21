@@ -3,11 +3,6 @@
 import * as React from 'react';
 
 class Header extends React.Component<any, any> {
-
-	constructor(props : any) {
-		super(props);
-	}
-
 	render() : JSX.Element {
 		return (
 			<nav className='navbar navbar-default'>
