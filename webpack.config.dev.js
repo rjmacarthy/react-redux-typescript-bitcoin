@@ -12,14 +12,16 @@ module.exports = {
     ],
     output: {
         path: path.join(__dirname, 'dist'),
-        filename: 'bundle.js',
-        publicPath: '/dist/'
+        filename: 'bundle.js'
     },
     resolve: {
         extensions: ['', '.webpack.js', '.web.js', '.ts', '.tsx', '.js', '.jsx']
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
+        new HtmlWebpackPlugin({
+            template: './src/index.html'
+        }),
         new webpack.ProvidePlugin({
             $: "jquery",
             jQuery: "jquery"
