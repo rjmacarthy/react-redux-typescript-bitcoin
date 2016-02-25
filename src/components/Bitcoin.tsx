@@ -10,12 +10,12 @@ import { connect } from 'react-redux';
 
 interface BitcoinProps {
 	bitcoin?: any;
-	actions?: any
+	actions?: any;
 };
 
 interface BitcoinState {
 	selected: string;
-	options?: Array<any>
+	options?: Array<any>;
 };
 
 class Bitcoin extends React.Component<BitcoinProps, BitcoinState> {
