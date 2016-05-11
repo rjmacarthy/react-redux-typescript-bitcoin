@@ -1,4 +1,3 @@
-/// <reference path='../../typings/tsd.d.ts'/>
 'use strict';
 
 import * as React from 'react';

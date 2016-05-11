@@ -1,4 +1,3 @@
-/// <reference path='../../typings/tsd.d.ts'/>
 'use strict';
 import BitcoinActions from '../actions/bitcoin';
 import { expect } from 'chai';

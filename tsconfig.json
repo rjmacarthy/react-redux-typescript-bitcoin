@@ -1,16 +1,18 @@
 {
-  "version": "1.7.6",
-  "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
-    "jsx": "react",
-    "sourceMap": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "outDir": "dist"
-  },
-  "exclude": [
-    "dist",
-    "node_modules"
-  ]
+    "version": "1.7.6",
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "jsx": "react",
+        "sourceMap": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "outDir": "dist"
+    },
+    "exclude": [
+        "dist",
+        "node_modules",
+        "typings/browser.d.ts",
+        "typings/browser"
+    ]
 }
