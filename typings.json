@@ -1,7 +1,7 @@
 {
   "name": "ts",
   "version": false,
-  "ambientDependencies": {
+  "globalDependencies": {
     "react": "github:DefinitelyTyped/DefinitelyTyped/react/react.d.ts#95433230a9913054c57c715e6b91a9ae738d0b97",
     "react-dom": "github:DefinitelyTyped/DefinitelyTyped/react/react-dom.d.ts#95433230a9913054c57c715e6b91a9ae738d0b97",
     "redux": "github:DefinitelyTyped/DefinitelyTyped/redux/redux.d.ts#aefd8146158b9f17c9eb79bbf158e6d8d3c2a87b",
